@@ -7,7 +7,7 @@ description = "A CLI tool to recover RSA private keys from public keys."
 license-file = "LICENSE"
 repository = "https://github.com/math-hiyoko/rsa-breaker"
 readme = "README.md"
-keywords = ["rsa", "crypto", "pem", "der", "openssh", "cli"]
+keywords = ["rsa", "crypto", "pem", "der", "openssh"]
 categories = ["command-line-utilities", "cryptography"]
 exclude = [
   "target/",

@@ -3,7 +3,7 @@
 A CLI tool to recover RSA private keys from public keys.
 
 
-## ✨ Features
+## Features
 
 - Parse RSA public keys (PEM / DER / OpenSSH)
 - Attempt to recover private keys
