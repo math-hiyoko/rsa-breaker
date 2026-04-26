@@ -10,7 +10,7 @@ A CLI tool to recover RSA private keys from public keys.
 - Output private keys in:
   - PKCS#1
   - PKCS#8
-  - OpenSSH (optional)
+  - OpenSSH
 - Automatic output filename generation
 
 ```bash
