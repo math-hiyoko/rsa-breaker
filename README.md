@@ -13,9 +13,12 @@ A CLI tool to recover RSA private keys from public keys.
   - OpenSSH (optional)
 - Automatic output filename generation
 
+```bash
+rsa-breaker --input ~/.ssh/id_rsa.pub --output ~/.ssh/id_rsa
+```
 
 ## Installation
 
 ```bash
-cargo install rsa-breaker
+cargo install --git https://github.com/math-hiyoko/rsa-breaker.git
 ```
