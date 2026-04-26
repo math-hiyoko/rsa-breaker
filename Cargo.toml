@@ -1,0 +1,31 @@
+[package]
+name = "rsa-breaker"
+version = "0.1.0"
+authors = ["Koki Watanabe <koki.watanabe.56@gmail.com>"]
+edition = "2024"
+description = "A CLI tool to recover RSA private keys from public keys."
+license-file = "LICENSE"
+repository = "https://github.com/math-hiyoko/rsa-breaker"
+readme = "README.md"
+keywords = ["rsa", "crypto", "pem", "der", "openssh", "cli"]
+categories = ["command-line-utilities", "cryptography"]
+exclude = [
+  "target/",
+  "sample/",
+]
+
+[features]
+default = ["pem", "der", "openssh"]
+pem = []
+der = []
+openssh = ["dep:ssh-key"]
+
+[dependencies]
+clap = { version = "4.6", features = ["derive"] }
+num-bigint = "0.4"
+rsa = { version = "0.9", features = ["pem", "std"] }
+ssh-key = { version = "0.6", features = ["rsa"], optional = true }
+log = "0.4"
+env_logger = "0.11"
+thiserror = "2.0"
+gnfs = { git = "https://github.com/danielrcurtis/gnfs.git", rev = "e3560aa" }
